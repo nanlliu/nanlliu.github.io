@@ -146,20 +146,19 @@ span.highlight {
   width: 85%;
 }
 
-.shadow {
-  border-radius: 30px;
-  background-color: white;
-  width:100%;
-  margin: auto;
-  vertical-align:middle;
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
-  max-width:1200px;
-  border:0px;
-  border-spacing:0px;
-  border-collapse:separate;
-  margin: auto;
+.container {
+  margin: 0 auto;
+  padding: 30px;
+  width: 1300px;
+  position: relative;
+  line-height: 150%;
+  color: #000000;
+  background-color: #ffffff;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 4px 4px 6px #888;
+  -webkit-box-shadow: 4px 4px 6px #888;
+  box-shadow: 4px 4px 6px #888;
 }
 
 body {
