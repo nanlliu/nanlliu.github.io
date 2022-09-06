@@ -99,7 +99,8 @@ strong {
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 papertitle {
@@ -110,7 +111,8 @@ papertitle {
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .one {
@@ -142,4 +144,20 @@ span.highlight {
   display: block;
   margin: auto;
   width: 85%;
+}
+
+.shadow {
+  border-radius: 30px;
+  background-color: white;
+  width:50%;
+  margin: auto;
+  vertical-align:middle;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+body {
+  padding: 15px;
+  background-color: #D8E8EE;
 }
