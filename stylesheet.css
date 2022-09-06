@@ -149,12 +149,17 @@ span.highlight {
 .shadow {
   border-radius: 30px;
   background-color: white;
-  width:50%;
+  width:100%;
   margin: auto;
   vertical-align:middle;
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
+  max-width:1200px;
+  border:0px;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin: auto;
 }
 
 body {
