@@ -4,14 +4,8 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDDCJPFM74"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-WDDCJPFM74');
-    document.querySelector('video').playbackRate = 1.25;
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Nan Liu</title>
@@ -73,10 +67,14 @@
               <td style="padding:25px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='glide_demo'>
-                    <video width=100% height=130% muted autoplay loop>
+                    <video id="glide_demo_video" width=100% height=100% muted autoplay loop>
                       <source src="images/glide_demo.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
+                    <div class="d-flex justify-content-center">
+                      <button class="btn btn-primary btn-sm selected" disabled onclick="changeImage()">2D images</button>
+                      <button class="btn btn-secondary btn-sm " onclick="changeImage()">3D assets</button>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -89,14 +87,13 @@
                 <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a>,
                 <a href="https://cocosci.mit.edu/">Joshua B. Tenenbaum</a>
                 <br>
-                <em>ECCV 2022</em>
-                <br>
-                <a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/">[Website]</a>
-                <a href="https://arxiv.org/abs/2206.01714">[Paper]</a>
-                <a href="https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch">[Code]</a>
-                <a href="https://colab.research.google.com/github/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch/blob/main/notebooks/demo.ipynb">[Colab]</a>
-                <a href="https://huggingface.co/spaces/Shuang59/Composable-Diffusion">[Demo]</a>
-                <a href="https://news.mit.edu/2022/ai-system-makes-models-like-dall-e-2-more-creative-0908">[MIT News]</a>
+                <em>ECCV 2022</em> /
+                <a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/">Website</a> /
+                <a href="https://arxiv.org/abs/2206.01714">Paper</a> /
+                <a href="https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch">Code</a> /
+                <a href="https://colab.research.google.com/github/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch/blob/main/notebooks/demo.ipynb">Colab</a> /
+                <a href="https://huggingface.co/spaces/Shuang59/Composable-Diffusion">Demo</a> /
+                <a href="https://news.mit.edu/2022/ai-system-makes-models-like-dall-e-2-more-creative-0908">MIT News</a>
                 <p></p>
               </td>
             </tr>
@@ -105,7 +102,7 @@
               <td style="padding:25px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='clevr_demo'>
-                    <video width=100% height=130% muted autoplay loop>
+                    <video width=100% height=100% muted autoplay loop>
                       <source src="images/compose_relations_teaser.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -121,62 +118,13 @@
                 <a href="https://cocosci.mit.edu/">Joshua B. Tenenbaum</a>,
                 <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a>
                 <br>
-                <em>NeurIPS 2021 <span>(Spotlight)</span></em> / <em>NeurIPS 2021 Workshop on Controllable Generative Modeling</em> <span>(Outstanding Paper Award)</span>
-                <br>
-                <a href="https://composevisualrelations.github.io/">[Website]</a>
-                <a href="https://arxiv.org/abs/2111.09297">[Paper]</a>
-                <a href="https://github.com/nanlliu/compose-visual-relations">[Code]</a>
-                <a href="https://news.mit.edu/2021/ai-object-relationships-image-generation-1129">[MIT News]</a>
+                <em>NeurIPS 2021 <span>(Spotlight)</span></em> / <em>NeurIPS 2021 Workshop on Controllable Generative Modeling</em> <span>(Outstanding Paper Award)</span> /
+                <a href="https://composevisualrelations.github.io/">Website</a> /
+                <a href="https://arxiv.org/abs/2111.09297">Paper</a> /
+                <a href="https://github.com/nanlliu/compose-visual-relations">Code</a> /
+                <a href="https://news.mit.edu/2021/ai-object-relationships-image-generation-1129">MIT News</a>
                 <p></p>
               </td>
-            </tr>
-
-            <tr>
-              <td style="padding:25px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two">
-                    <img src='images/fill-in-blank-example.png' alt="" class="center">
-                  </div>
-                </div>
-              </td>
-              <td style="padding:25px;width:75%;vertical-align:middle">
-                <papertitle>FIBER: Fill-in-the-Blanks as a Challenging Video Understanding Evaluation Framework</papertitle>
-                <br>
-                <a href="https://santi.uy/">Santiago Castro</a>,
-                <a href="https://github.com/wsxzwps">Ruoyao Wang</a>,
-                <a href="https://github.com/Explorerhpx">Pingxuan Huang</a>,
-                <a href="https://ianbstewart.github.io/">Ian Stewart</a>,<br>
-                <a href="https://ianbstewart.github.io/">Oana Ignat</a>,
-                <strong>Nan Liu</strong>,
-                <a href="https://www.jonathancstroud.com/">Jonathan Stroud</a>,
-                <a href="https://web.eecs.umich.edu/~mihalcea/">Rada Mihalcea</a>
-                <br>
-                <em>ACL</em> 2022
-                <br>
-                <a href="https://arxiv.org/abs/2104.04182">[Paper]</a>
-                <a href="https://github.com/MichiganNLP/video-fill-in-the-blank">[Code]</a>
-                <p></p>
-              </td>
-            </tr>
-<!--            <tr>-->
-<!--              <td style="padding:50px;width:25%;vertical-align:middle">-->
-<!--                <div class="one">-->
-<!--                  <img src='images/SENSOR-ADVERSARIAL-TRAITS.png' alt="" class="center">-->
-<!--                </div>-->
-<!--              </td>-->
-<!--              <td style="padding:50px;width:75%;vertical-align:middle">-->
-<!--                <papertitle>Sensor Adversarial Traits: Analyzing Robustness of 3D Object Detection Sensor Fusion Models</papertitle>-->
-<!--                <br>-->
-<!--                <a href="https://wonpark.io/">Won Park</a>,-->
-<!--                <strong>Nan Liu</strong>,-->
-<!--                <a href="https://www.ics.uci.edu/~alfchen/">Qi Afred Chen</a>,-->
-<!--                <a href="https://web.eecs.umich.edu/~zmao/">Z. Morley Mao</a>-->
-<!--                <br>-->
-<!--                <em>ICIP</em> 2021-->
-<!--                <br>-->
-<!--                <a href="https://arxiv.org/abs/2109.06363">[Paper]</a>-->
-<!--                <p></p>-->
-<!--              </td>-->
             </tr>
           </tbody>
         </table>
@@ -194,13 +142,56 @@
           </tbody>
         </table>
         <p style="text-align:right;font-size:small;">
-          Template from <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small;">Jon Barron</a>,
-          and design from <a href="https://www.cs.toronto.edu/~ajyang/" style="font-size:small;">Joyce Yang</a>.
+          Template from <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small;">Jon Barron</a>.
         </p>
       </td>
     </tr>
   </table>
   </div>
+
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WDDCJPFM74');
+    document.querySelector('video').playbackRate = 1.25;
+
+    $('button').on('click', function(){
+    $('button').addClass('btn-secondary');
+    $('button').removeClass('btn-primary');
+    $('button').removeClass('selected');
+    $('button').prop('disabled', false);
+    $(this).addClass('selected');
+    $(this).addClass('btn-primary');
+    $(this).removeClass('btn-secondary');
+    $(this).prop('disabled', true);
+
+    });
+
+    let n = 1;
+
+    function changeImage() {
+      let source = document.getElementById('glide_demo_video');
+
+      if ( n === 0 ) {
+        source.pause();
+        source.setAttribute('src', "./images/glide_demo.mp4");
+        source.load();
+        source.play();
+        n = 1;
+      }
+      else if ( n === 1 ) {
+        source.pause();
+        source.setAttribute('src', "./images/point-e-video.mp4");
+        source.load();
+        source.play();
+        n = 0;
+      }
+
+    }
+
+  </script>
 </body>
 
 </html>
