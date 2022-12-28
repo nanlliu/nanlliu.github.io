@@ -115,14 +115,14 @@ name {
 }
 
 .one {
-   width: 240px;
+  width: 240px;
   height: 160px;
   position: relative;
 }
 
 .two {
-   width: 240px;
-  height: 160px;
+  width: 240px;
+  height: auto;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -147,7 +147,6 @@ span.highlight {
 
 .container {
   margin: 0 auto;
-  width: 900px;
   height: auto;
   padding: 10px;
   position: relative;
