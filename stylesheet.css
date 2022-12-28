@@ -78,12 +78,12 @@ th,
 tr,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px
+  font-size: 15px
 }
 
 p {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px
+  font-size: 15px
 }
 
 span {
@@ -93,7 +93,7 @@ span {
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 heading {
@@ -104,25 +104,25 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bolder
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bolder;
 }
 
 .one {
-  width: 300px;
-  height: 150px;
+   width: 240px;
+  height: 160px;
   position: relative;
 }
 
 .two {
-  width: 300px;
-  height: 150px;
+   width: 240px;
+  height: 160px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -147,7 +147,7 @@ span.highlight {
 
 .container {
   margin: 0 auto;
-  width: 1000px;
+  width: 900px;
   padding: 10px;
   position: relative;
   line-height: 150%;
@@ -178,7 +178,8 @@ video {
 
 hr {
     border: none;
-    height: 0.08em;
+    margin: 0;
+    height: 1px;
     /* Set the hr color */
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
