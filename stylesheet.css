@@ -1,193 +1,116 @@
-@font-face {
-  font-family: 'Lato';
+body, h1, h2, h3, ul, li, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0px;
+}
+
+header {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+header p {
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+p {
+  padding: 5px 0px 5px 0px;
+}
+
+.slanted {
   font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 a {
-  color: #696969;
+  color: #9e061f;
   text-decoration: none;
 }
-
-a:focus,
 a:hover {
   text-decoration: underline;
 }
 
-body,
-td,
-th,
-tr,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px
+ul li {
+  list-style-position: inside;
 }
 
-p {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-span {
-  color: red;
-  font-weight: bold;
-}
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: bolder
-}
-
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 35px;
-  font-weight: bolder;
-}
-
-.one {
-  width: 360px;
-  height: 180px;
-  position: relative;
-}
-
-img {
-  margin: auto;
+img, video {
   display: block;
-}
-
-.two {
-  display: flex;
-  width: 360px;
-  height: 180px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.center {
-  display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-}
+  height: 100%;
+  object-fit: cover; /* Crop and cover the container */
+  object-position: 50% 20%; /* Center the image in the container */
 
-.container {
-  margin: 0 auto;
-  width: 1100px;
-  max-width: 1100px;
-  height: auto;
-  padding: 10px;
-  position: relative;
-  line-height: 150%;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-
-img {
-  max-width:100%;
-  max-height:100%;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 video {
-  max-width:100%;
-  max-height:100%;
+  padding: 2px;
+  object-position: 50% 50%;
 }
 
-hr {
-    border: none;
-    margin: 0;
-    height: 1px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333; /* Modern Browsers */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-gap: 50px; /* Add space between grid items */
+  padding: 10px 0px 10px 0px;
 }
 
-html {
-  overscroll-behavior: none
+.rows {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1px; /* Add space between grid items */
+  padding: 10px 0px 10px 0px;
 }
 
-.btn {
-  margin: 1px;
-  font-size: 0.7rem;
+.video-container {
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop and cover the container */
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.video-container:hover {
+  border: 1px solid #1646e3;
+}
+
+@media (max-width: 600px) {
+  .columns {
+      display: block;
+      margin-bottom: 20px;
+  }
+  img {
+      margin-bottom: 20px;
+      height: 70vw;
+  }
+  .video-container {
+      margin-bottom: 20px;
+  }
 }
