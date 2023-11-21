@@ -51,6 +51,7 @@ a:hover {
 
 ul li {
   list-style-position: inside;
+  margin-top: 10px;
 }
 
 img, video {
@@ -113,4 +114,8 @@ video {
   .video-container {
       margin-bottom: 20px;
   }
+}
+
+footer {
+  margin-top: 20px;
 }
