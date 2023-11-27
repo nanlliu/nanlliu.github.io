@@ -42,7 +42,7 @@ p {
 }
 
 a {
-  color: #9e061f;
+  color: #f7a072;
   text-decoration: none;
 }
 a:hover {
@@ -119,4 +119,8 @@ video {
 footer {
   font-size: 0.8em;
   margin-top: 20px;
+}
+
+font {
+  color: #0fa3b1
 }
