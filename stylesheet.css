@@ -77,6 +77,15 @@ video {
   grid-template-columns: 1fr 2.5fr;
   grid-gap: 50px; /* Add space between grid items */
   padding: 10px 0px 10px 0px;
+  align-items: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .rows {
