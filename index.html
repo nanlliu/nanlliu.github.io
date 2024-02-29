@@ -9,6 +9,7 @@
 
     <title>Nan Liu</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link ret="canonical" href="https://nanliu.io/" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/cmun.css"></link>
@@ -40,24 +41,27 @@
 </head>
 
 <body>
-    <section id="about" class="fade-in">
-        <div style="align-self: center;">
-            <header class="fade-in">
-                <h1>Nan Liu</h1> <a href="https://github.com/nanlliu/">Github</a> &nbsp; / &nbsp; <a id="email" href="mailto:liunan@umich.edu" onclick="showEmail(event)">Email</a>
-            </header>
-            <p class="fade-in">I got my bachelor's and master's from UMich and UIUC.</p>
-            
+    <section id="about" class="fade-in container">
+        <div class="row">
+            <div class="col-8">
+                    <header class="fade-in">
+                        <h1>Nan Liu</h1> <a href="https://github.com/nanlliu/">Github</a> &nbsp; / &nbsp; <a id="email" href="mailto:liunan@umich.edu" onclick="showEmail(event)">Email</a>
+                    </header>
+                    <p class="fade-in">I got my bachelor's and master's from UMich and UIUC. My current focus is generative modeling. I am also studying alignment problems in my free time.</p>
+            </div>
         </div>
     </section>
 
-    <section id="research" class="fade-in">
-        <h2>Research</h2>
-        <div class="columns">
-            <img src="images/mxm_cvpr24.png" alt="mixmatch_cvpr" class="video-container">
-            <div class="fade-in">
-                <h3>
-                    M&M VTO: Multi-Garment Virtual Try-On and Editing
-                </h3>
+    <section id="research" class="container fade-in overflow-hidden">
+        <h2>Publications</h2>
+        <div class="row gx-5 gy-4">
+            <div class="col-4 fade-in align-self-center">
+                <a href="" class="video-container">
+                    <img src="images/mxm_cvpr24.png" alt="mixmatch_cvpr">
+                </a>
+            </div>
+            <div class="col-8 fade-in align-self-center">
+                <h3>M&M VTO: Multi-Garment Virtual Try-On and Editing</h3>
                 <p class="slanted">
                     Luyang Zhu,
                     Yingwei Li,
@@ -67,21 +71,18 @@
                     Ira Kemelmacher-Shlizerman
                 </p>
                 <p>
-                  CVPR 2024 /
-                  <a href="">Website (Soon)</a> /
-                  <a href="">Paper (Soon)</a>
+                    CVPR 2024 /
+                    <a href="">Website (Soon)</a> /
+                    <a href="">Paper (Soon)</a>
                 </p>
             </div>
-        </div>
-        <div class="columns">
-            <a href="https://arxiv.org/abs/2206.01714" class="video-container">
-                <video autoplay loop muted playsinline src="images/unsup_discovery.m4v"></video>
-            </a>
-            <div class="fade-in">
-                <h3>
-                  Unsupervised Compositional Concepts Discovery with Text-to-Image <br>
-                  Generative Models
-                </h3>
+            <div class="col-4 align-self-center">
+                <a href="https://arxiv.org/abs/2306.05357" class="video-container">
+                    <video autoplay loop muted playsinline src="images/unsup_discovery.m4v"></video>
+                </a>
+            </div>
+            <div class="col-8 fade-in align-self-center">
+                <h3>Unsupervised Compositional Concepts Discovery with Text-to-Image Generative Models</h3>
                 <p class="slanted">
                   <u>Nan Liu</u>*, Yilun Du*, Shuang Li*, Joshua B. Tenenbaum, Antonio Torralba
                 </p>
@@ -92,15 +93,13 @@
                   <a href="https://github.com/nanlliu/Unsupervised-Compositional-Concepts-Discovery">Code</a>
                 </p>
             </div>
-        </div>
-        <div class="columns">
-            <a href="https://arxiv.org/abs/2206.01714" class="video-container">
-                <video autoplay loop muted playsinline src="images/composable_diffusion.m4v"></video>
-            </a>
-            <div class="fade-in">
-                <h3>
-                  Compositional Visual Generation with Composable Diffusion Models
-                </h3>
+            <div class="col-4 fade-in align-self-center">
+                <a href="https://arxiv.org/abs/2206.01714" class="video-container">
+                    <video autoplay loop muted playsinline src="images/composable_diffusion.m4v"></video>
+                </a>
+            </div>
+            <div class="col-8 fade-in align-self-center">
+                <h3>Compositional Visual Generation with Composable Diffusion Models</h3>
                 <p class="slanted">
                   <u>Nan Liu</u>*, Shuang Li*, Yilun Du*, Antonio Torralba, Joshua B. Tenenbaum
                 </p>
@@ -114,18 +113,14 @@
                   <a href="https://news.mit.edu/2022/ai-system-makes-models-like-dall-e-2-more-creative-0908">MIT News</a>
                 </p>
             </div>
-        </div>
-        <div class="columns">
-            <a href="https://arxiv.org/abs/2111.09297" class="video-container">
-                <video autoplay loop muted playsinline src="images/compose_relations.m4v"></video>
-            </a>
-            <div class="fade-in">
-                <h3>
-                  Learning to Compose Visual Relations
-                </h3>
-                <p class="slanted">
-                  <u>Nan Liu</u>*, Shuang Li*, Yilun Du*, Joshua B. Tenenbaum, Antonio Torralba
-                </p>
+            <div class="col-4 fade-in align-self-center">
+                <a href="https://arxiv.org/abs/2111.09297" class="video-container">
+                    <video autoplay loop muted playsinline src="images/compose_relations.m4v"></video>
+                </a>
+            </div>
+            <div class="col-8 fade-in align-self-center">
+                <h3>Learning to Compose Visual Relations</h3>
+                <p class="slanted"><u>Nan Liu</u>*, Shuang Li*, Yilun Du*, Joshua B. Tenenbaum, Antonio Torralba</p>
                 <p>
                   NeurIPS 2021 /
                   <a href="https://composevisualrelations.github.io/">Website</a> /
