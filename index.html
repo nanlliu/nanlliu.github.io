@@ -28,15 +28,25 @@
             transition: opacity 0.5s ease-in-out;
         }
     </style>
+
+    <script>
+        function showEmail() {
+            event.preventDefault(); // Prevents the default behavior of the anchor tag
+            var emailElement = document.getElementById('email');
+            var email = emailElement.getAttribute('href').replace('mailto:', '');
+            emailElement.textContent = email;
+        }
+    </script>
 </head>
 
 <body>
     <section id="about" class="fade-in">
         <div style="align-self: center;">
             <header class="fade-in">
-                <h1>Nan Liu</h1> (<a href="https://github.com/nanlliu/">Github</a>)
+                <h1>Nan Liu</h1> <a href="https://github.com/nanlliu/">Github</a> &nbsp; / &nbsp; <a id="email" href="mailto:liunan@umich.edu" onclick="showEmail(event)">Email</a>
             </header>
             <p class="fade-in">I got my bachelor's and master's from UMich and UIUC.</p>
+            
         </div>
     </section>
 
