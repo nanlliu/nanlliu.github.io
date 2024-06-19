@@ -69,7 +69,7 @@ img, video {
   margin-right: auto;
   max-width: 100%;
   /* height: 100%; */
-  object-fit: cover; /* Crop and cover the container */
+  object-fit: contain; /* Crop and cover the container */
   /* object-position: 50% 20%; Center the image in the container */
   box-sizing: border-box;
   border-radius: 5px;
