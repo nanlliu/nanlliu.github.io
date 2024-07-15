@@ -16,6 +16,14 @@ section {
   margin: 20px 0px;
 }
 
+.published {
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 20px;
+  line-height: 1.6;
+  background-color: #ffdad5
+}
+
 header {
   text-align: left;
   display: flex;
@@ -51,7 +59,7 @@ p {
 }
 
 a {
-  color: #cc444b;
+  color: #EA4335;
   text-decoration: none;
 }
 a:hover {
