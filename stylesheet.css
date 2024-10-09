@@ -1,6 +1,5 @@
-body, h1, h2, h3, h4, ul, li, p {
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5 {
+  margin: 15px 0px !important;
 }
 
 body {
@@ -8,13 +7,10 @@ body {
   background-color: #ffffff;
   color: #333;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 850px !important;
   padding: 20px;
 }
 
-section {
-  margin: 20px 0px;
-}
 
 .published {
   padding-right: 5px;
@@ -46,13 +42,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.15em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-p {
-  margin: 10px 0px 10px 0px;
-}
 
 .slanted {
   font-style: italic;
@@ -62,6 +55,7 @@ a {
   color: #EA4335;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
