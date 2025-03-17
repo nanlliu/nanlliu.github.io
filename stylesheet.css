@@ -9,6 +9,11 @@ h2 {
 body {
   font: .8em/1.5;
   font-family: "Open Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   background-color: white !important;
   color: #333;
   margin: 0 auto;
@@ -16,23 +21,9 @@ body {
   padding: 20px;
 }
 
-
-.open-sans-body {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-
 .published {
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 20px;
   line-height: 1.6;
-  background-color: #ffdad5
+  font-weight: 1000;
 }
 
 header {
